@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
+
+:root {
+  --color-main: #ccb39b;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background: rgb(0, 0, 0);
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(47, 40, 22, 1) 100%
+  );
+  color: var(--color-main);
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Serif KR", serif;
+  width: 100%;
+}
+
+header {
+  text-align: center;
+  height: auto;
+}
+
+.logo {
+  margin-top: 7%;
+  margin-bottom: 0.5%;
+  width: 10.5rem;
+}
+
+.hat {
+  margin-top: 7%;
+  margin-bottom: 0.5%;
+  width: 10.5rem;
+}
+
+.title {
+  margin-bottom: 2rem;
+  font-size: 3.5rem;
+  font-family: "Fredericka the Great", cursive;
+}
+
+.test {
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 7.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.question-container {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.answer-container {
+  margin-top: 3.125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* index, start */
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-box {
+  width: 10.63rem;
+  height: 1.563rem;
+  text-align: center;
+  border: 0;
+  border-bottom: 2px solid var(--color-main);
+  color: var(--color-main);
+  font-size: medium;
+  padding-bottom: 5px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.input-box:focus {
+  outline: none;
+}
+
+.btn {
+  margin-top: 1.25rem;
+  width: auto;
+  height: auto;
+  background-color: rgba(204, 179, 155, 0);
+  color: var(--color-main);
+  font-size: medium;
+  border: 2px solid;
+  border-radius: 5px;
+  padding: 0.625rem 0.625rem;
+  font-family: "Noto Serif KR", serif;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: rgba(204, 179, 155, 1);
+  color: #111111;
+  transition: all 200ms ease-in;
+}
+
+/* takeTest */
+.answer-box1,
+.answer-box2 {
+  font-size: large;
+  border: 3px solid;
+  border-radius: 10px;
+  margin-bottom: 1.25rem;
+  padding: 0.9375rem 0.9375rem;
+  width: 37.5rem;
+}
+
+.answer-box1:hover,
+.answer-box2:hover {
+  cursor: pointer;
+  background-color: rgba(204, 179, 155, 1);
+  color: #111111;
+  transition: all 200ms ease-in;
+}
+
+.answer-box2 {
+  margin-bottom: 6rem;
+}
+
+/* Result */
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  margin-bottom: 13%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.mention {
+  font-size: x-large;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.result-logo {
+  width: 18.75rem;
+  height: 21.88rem;
+  margin-top: 1.875rem;
+  margin-bottom: 1.875rem;
+}
+
+.desc {
+  margin-bottom: 6.25rem;
+  text-align: center;
+  color: #d9d9d9;
+}
+
+.desc-title {
+  font-size: x-large;
+}
+
+.desc-ideology {
+  margin-top: 1.25rem;
+  font-size: medium;
+}
+
+.gryffindor-bg {
+  background: rgb(87, 17, 8);
+  background: radial-gradient(
+    circle,
+    rgba(87, 17, 8, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.hufflepuff-bg {
+  background: rgb(112, 74, 0);
+  background: radial-gradient(
+    circle,
+    rgba(112, 74, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.ravenclaw-bg {
+  background: rgb(27, 53, 80);
+  background: radial-gradient(
+    circle,
+    rgba(27, 53, 80, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.slytherin-bg {
+  background: rgb(41, 68, 52);
+  background: radial-gradient(
+    circle,
+    rgba(41, 68, 52, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.desc-detail {
+  margin-top: 10%;
+  font-size: large;
+  color: var(--color-main);
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+}
+
+.share {
+  margin-left: 20px;
+}
+
+/* Responsive(미완) */
+@media screen and (max-width: 768px) {
+  body {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .logo {
+    margin-top: 7rem;
+    width: 8rem;
+  }
+
+  .hat {
+    margin-top: 4.5rem;
+    width: 8rem;
+  }
+
+  .title {
+    font-size: 2.2rem;
+    font-family: "Fredericka the Great", cursive;
+  }
+
+  .question-container {
+    font-size: medium;
+  }
+
+  /* takeTest */
+  .answer-box1,
+  .answer-box2 {
+    font-size: 0.9rem;
+    border: 2px solid;
+    width: 95%;
+  }
+
+  /* Result */
+  .mention {
+    font-size: 1.15rem;
+  }
+
+  .result-logo {
+    width: 10rem;
+    height: 12rem;
+  }
+
+  .desc {
+    margin-bottom: 6.25rem;
+    text-align: center;
+    color: #d9d9d9;
+  }
+
+  .desc-title {
+    font-size: medium;
+  }
+
+  .desc-ideology {
+    margin-top: 0.5%;
+    font-size: small;
+  }
+
+  .desc-detail {
+    font-size: medium;
+  }
+}
